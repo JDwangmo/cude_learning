@@ -62,7 +62,7 @@ int add_cuda()
     float maxError = 0.0;
     for (int i = 0; i < N; i++){
 //        std::cout << z[i] << std::endl;
-        maxError = fmax(maxError, fabs(z[i] - 30.0));
+        maxError = fmax(maxError, (float)(fabs(z[i] - 30.0)));
     }
     std::cout << "最大误差: " << maxError << std::endl;
 
